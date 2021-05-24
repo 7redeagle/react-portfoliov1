@@ -3,6 +3,20 @@ import NavItem from './NavItem';
 
 class Navbar extends Component {
   render() {
+    constructor(props) {
+    super(props);
+    this.state = {
+      'NavItemActive':''
+    }
+  }
+  activeitem = (x) => {
+    if(this.state.NavItemId.length>0) {
+      document.getElementById(this.state.NavItemActive).classList.remove('active')
+    };
+    this.setState({'NavItemActive':x},() => {
+      document.getElementById(this.state.NavItemActive).classList.add('active')
+    });
+  };
     return (
       <nav>
         <ul>

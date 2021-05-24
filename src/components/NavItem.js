@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Component } from 'react';
 
 class NavItem extends Component {
+  
   render() {
     return(
       <li>
