@@ -14,7 +14,6 @@ const Hero = () => {
           <a href="#projects">
             <button className="btn btn--pink-border">Projects</button>
           </a>
-
         </div>
       </div>    
     </div>
