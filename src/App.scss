@@ -1,9 +1,10 @@
 .App {
   text-align: center;
+  background-color: aqua;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 100vmin;
   pointer-events: none;
 }
 
@@ -32,6 +33,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
