@@ -1,0 +1,18 @@
+include mixins 
+div
+  noscript
+    p Please enable Javascript for best experience. 
+  
+div.pure-g
+  div.hero__portrait.pure-u-1.pure-u-md-1-2
+    include ../assets/poly-pic.svg
+  div.hero__content.pure-u-1.pure-u-md-1-2
+    h2.hero__heading 👋 Hi, I'm Ina Chen!
+    h3 I am a Web Developer
+    p.hero__text I'm a front-end web developer, who is also interested in UI/UX web design. I love building websites and am always looking for new opportunities to improve my skills.
+    div.hero__links
+      a(href="#projects")
+        button.btn.btn--pink-border Projects
+    
+    div.hero__links.hero__links--social
+      + social-links

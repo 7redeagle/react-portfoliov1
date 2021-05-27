@@ -1,0 +1,12 @@
+// Icons 
+
+.icon {
+  margin: 0 1em;
+  width: 2em;
+  height: 2em;
+  fill: $text-color;
+
+  &:hover {
+    fill: $icon-hover;
+  }
+}

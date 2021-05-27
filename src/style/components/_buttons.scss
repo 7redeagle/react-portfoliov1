@@ -1,0 +1,39 @@
+.btn {
+  background: transparent;
+  color: $text-color;
+  transition: all 0.3s ease;
+  margin: auto;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 0.25em;
+  outline: none;
+}
+
+.btn--pink-border {
+  border: $btn-pink-border;
+
+  &:hover {
+    background: $btn-pink-hover;
+    color: $btn-text-hover;
+    box-shadow: $card-shadow;
+    transform: translateY(-5px);
+  }
+}
+
+.btn--projects {
+  box-shadow:
+    0.3em 0.3em 0 0 $btn-project,
+    inset 0.3em 0.3em 0 0 $btn-project;
+  background: none;
+  border: none;
+  border-radius: 0px;
+
+  &:hover {
+    box-shadow:
+      0 0 0 0 $btn-project,
+      inset 6em 3.5em 0 0 $btn-project;
+    color: $white;
+  }
+}

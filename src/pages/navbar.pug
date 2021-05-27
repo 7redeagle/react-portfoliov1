@@ -1,0 +1,26 @@
+ul.navbar__nav 
+  li.navbar__item.navbar__logo
+    a.navbar__link(href="#hero")
+      img.navbar__icon--logo(src="../src/assets/logo.png" alt="personal logo: return home" width="100%" height="100%")
+      //- include ../assets/nav-svg/logo.pug
+
+  li.navbar__item
+    a.navbar__link(href="#projects")
+      include ../assets/nav/projects.pug 
+      span.navbar__text Projects
+  
+  li.navbar__item 
+    a.navbar__link(href="#skills")
+      include ../assets/nav/skills.pug 
+      span.navbar__text Skills
+
+  li.navbar__item 
+    a.navbar__link(href="#contact")
+      include ../assets/nav/contact.pug 
+      span.navbar__text Contact
+  
+  li.navbar__item.navbar__item--social
+    a.navbar__link(href="https://github.com/7redeagle" target="_blank" rel="noopener")
+      include ../assets/nav/github.pug 
+    //- a.navbar__link(href="https://github.com" target="_blank" rel="noopener")
+    //-   include ../assets/nav/codepen.pug 

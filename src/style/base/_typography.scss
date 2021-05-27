@@ -1,0 +1,102 @@
+$font-head: "Lato",
+sans-serif;
+$font-body: "Montserrat",
+sans-serif;
+$font-size: 16px;
+
+html,
+button,
+input,
+select,
+textarea,
+p,
+.pure-g[class *="pure-u"] {
+  font-family: $font-body;
+  font-size: $font-size;
+  color: $text-color;
+  line-height: 1.4;
+
+  @include screen(phone-only) {
+    font-size: 16px;
+  }
+
+  @include screen(tablet-port) {
+    font-size: 18px;
+  }
+
+  @include screen(desktop) {
+    font-size: 20px;
+  }
+
+  @include screen(desktop-lg) {
+    font-size: 22px;
+  }
+}
+
+h2 {
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $font-head;
+  font-weight: 800;
+  font-style: normal;
+  color: $text-h-color;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+@include screen(tablet-port) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-hover;
+  }
+
+  ;
+}

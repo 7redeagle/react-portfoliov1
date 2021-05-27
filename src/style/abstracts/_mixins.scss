@@ -1,0 +1,61 @@
+// Media Queries 
+
+/* 
+
+0 - 599 px:            Phone
+600px - 900px:         Tablet Portrait
+900px - 1200px:        Tablet Landscape 
+[1200px - 1800px]:     Desktop Normal 
+1800px + :             Big Desktop 
+
+Order: Base + Typography > Layout + Grid > Page Layout > Components
+
+*/
+
+// Example 
+
+// .nav {
+//   font-size: 2rem;
+
+//   @include screen(phone-only) {
+//     font-size: 2rem;
+//   }
+// }
+
+@mixin screen ($size) {
+  @if $size==phone-only {
+    @media (max-width:599px) {
+      @content;
+    }
+  }
+
+  @else if $size==tablet-port {
+    @media (min-width: 600px) {
+      @content;
+    }
+  }
+
+  @else if $size==tablet-land {
+    @media (min-width: 900px) {
+      @content;
+    }
+  }
+
+  @else if $size==desktop {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+
+  @else if $size==desktop-lg {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Breakpoint"
+  }
+
+
+}

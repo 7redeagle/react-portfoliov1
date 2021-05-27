@@ -1,0 +1,26 @@
+//  vendors: normalize, grid system
+@import 'vendors/normalize';
+@import 'vendors/pure-grid';
+
+//  abstracts, variables, mixins, helpers
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+// base: base color, typography
+@import 'base/base';
+@import 'base/typography';
+
+// components: icons, buttons
+@import 'components/buttons';
+@import 'components/icons';
+
+//  layout: sections, navbar, footer
+@import 'layout/sections';
+@import 'layout/navbar';
+@import 'layout/footer';
+
+//  sections: hero, projects, skills, contact
+@import 'sections/hero';
+@import 'sections/projects';
+@import 'sections/skills';
+@import 'sections/contact';

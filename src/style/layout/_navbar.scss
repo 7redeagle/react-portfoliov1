@@ -1,0 +1,140 @@
+// navbar 
+.navbar {
+  position: fixed;
+  width: $nav-width;
+  background-color: $nav-bg;
+  box-shadow: $nav-shadow;
+  transition: all $nav-speed;
+  left: 0;
+  z-index: 999;
+
+  @include screen(tablet-port) {
+    top: 0;
+    height: 100vh;
+  }
+
+  @include screen(phone-only) {
+    bottom: 0;
+    width: 100vw;
+    height: $nav-width;
+  }
+}
+
+.navbar__nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+
+  @include screen(phone-only) {
+    flex-direction: row;
+    align-items: start;
+    justify-content: flex-start;
+  }
+}
+
+.navbar__item {
+  width: $nav-width;
+  max-width: $nav-maxwidth;
+  margin-bottom: 1.5em;
+  cursor: pointer;
+  fill: $text-color;
+
+  @include screen(phone-only) {
+    margin-right: auto;
+  }
+
+  &--social {
+    margin-top: auto;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+
+    @include screen(phone-only) {
+      display: none;
+    }
+  }
+
+  &:hover {
+    .navbar__text {
+      transform: scale(1) translateX($nav-width);
+      transition: transform 0ms ease-in;
+    }
+
+    // .navbar__icon {
+    //   fill: $icon-hover;
+    // }
+
+    .navbar__icon--social {
+      fill: $icon-hover;
+    }
+  }
+}
+
+.navbar__link {
+  display: flex;
+  align-items: center;
+  height: $nav-width;
+  color: $text-color;
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7);
+  transition: $nav-speed;
+  height: $nav-width;
+  max-height: $nav-maxwidth;
+
+  &:hover {
+    filter: grayscale(0%) opacity(1);
+  }
+
+  // navbar link: highlight active menu
+  &--active {
+    filter: grayscale(0%) opacity(1);
+
+    & .navbar__icon {
+      fill: $icon-hover;
+    }
+  }
+}
+
+.navbar__text {
+  position: fixed;
+  background-color: $text-color;
+  color: $nav-bg;
+  padding: 0.2em 0.3em;
+  border-radius: 2px;
+  margin: 0.1em;
+  transform: scale(0) translateX(0px);
+  transition: transform 300ms ease-out;
+  left: 10px;
+
+  @include screen(phone-only) {
+    display: none;
+  }
+}
+
+
+
+
+.navbar__icon {
+  width: 2em;
+  height: 2em;
+  transition: $nav-speed;
+  margin: 1em;
+  fill: $text-color;
+
+  @include screen(phone-only) {
+    margin: 1em 1em 0.5em 1em;
+  }
+
+  &--logo {
+    // width: calc(#{$nav-width} - 0.5em);
+    // height: $nav-width;
+    // width: 100%;
+    // height: 100%;
+    margin: auto;
+  }
+}

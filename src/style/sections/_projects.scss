@@ -1,0 +1,58 @@
+.projects__grid {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  margin: auto;
+  margin-top: 1em;
+
+  @include screen(tablet-land) {
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+}
+
+.card {
+  background: $card-bg;
+  color: $text-color;
+  padding: .5em;
+  box-shadow: $card-shadow;
+  transform: translateY(0);
+  transition: transform 300ms;
+  border-radius: $card-radius;
+  text-align: center;
+
+  &:hover {
+    transform: translateY(-3px);
+    transition: transform 300ms;
+  }
+
+  &__title {
+    text-align: center;
+    margin: 0.5em auto;
+  }
+
+  &__text {
+    font-weight: 100;
+  }
+
+  &__image {
+    text-align: center;
+
+    // & img {
+    //   width: 90%;
+    // }
+  }
+
+  &__links a {
+    margin: auto .5em;
+
+    @include screen(phone-only) {
+      display: grid;
+      grid-auto-rows: 1fr;
+      grid-template-columns: 1fr;
+      margin-top: .5em;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.main {
+  padding: 1em;
+  transition: $transitions;
+
+  @include screen(tablet-port) {
+    margin-left: calc(#{$nav-width} + 0.5em);
+  }
+}

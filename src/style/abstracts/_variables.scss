@@ -1,0 +1,44 @@
+// Colors 
+
+/* palettes */
+$rich-black: #12181b;
+$cadet-gray: #b2becd;
+$white: #ffffff;
+$black: #010101;
+$gunmetal-gray: #2a2e35;
+$persian-pink: #ff79c6;
+$deep-blush-pink: #eb6992;
+$royal-blue: #4663e0;
+$mint-green: #34b484;
+
+/* base */
+$body-bg: $rich-black;
+$link-color: $royal-blue;
+$link-hover: $mint-green;
+$text-color: $cadet-gray;
+$text-h-color: $white;
+
+/* navbar */
+$nav-bg: $gunmetal-gray;
+$nav-shadow: 4px 0 10px -3px $black;
+$icon-hover: $persian-pink;
+$nav-width: 4em;
+$nav-speed: 600ms ease;
+$nav-maxwidth: 70px;
+
+/* cards */
+$card-bg: $gunmetal-gray;
+$card-radius: 1px;
+$card-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+/* buttons */
+$btn-pink-border: 2px solid $persian-pink;
+$btn-pink-hover: $persian-pink;
+$btn-text-hover: $white;
+$btn-project: $persian-pink;
+
+/* misc */
+$transitions: all 0.3s ease;
+$overlay-bg: rgba(0, 0, 0, 0.9);
+$hr-border: 2px dashed $nav-bg;
+$contact-border: 2px solid $persian-pink;

@@ -1,0 +1,27 @@
+.skills__resume {
+  text-align: center;
+}
+
+.skills__icons {
+  margin: 1em auto;
+  text-align: center;
+
+  & svg {
+    width: 5em;
+    height: 5em;
+    margin: 1em;
+  }
+}
+
+.skills__work {
+  margin: auto;
+
+  & ul {
+    list-style-type: circle;
+
+
+    & li {
+      line-height: 1.3;
+    }
+  }
+}

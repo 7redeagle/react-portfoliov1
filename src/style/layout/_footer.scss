@@ -1,0 +1,30 @@
+.footer {
+  @include screen(tablet-port) {
+    margin-left: calc(#{$nav-width} + 0.5em);
+  }
+}
+
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 10em;
+  margin-top: 1em;
+  font-size: 0.85em;
+  opacity: 0.8;
+
+  @include screen(phone-only) {
+    min-height: calc(#{$nav-width} + 15em);
+  }
+
+  &__links {
+    margin-top: 1em;
+
+    & svg {
+      margin: auto 1em;
+    }
+  }
+}
