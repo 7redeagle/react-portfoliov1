@@ -1,4 +1,3 @@
-// import { ReactComponent as Logo } from '../assets/nav/logo.svg'
 import logo from '../assets/logo.png';
 import { ReactComponent as NavProjects } from '../assets/nav/projects.svg';
 import { ReactComponent as NavSkills } from '../assets/nav/skills.svg';
@@ -7,7 +6,7 @@ import { ReactComponent as NavGithub } from '../assets/nav/github.svg';
 
 const Navbar = () => {
   const linkGithub = "https://github.com/7redeagle";
-  
+
   return (
     <nav className="navbar">
       <ul className="navbar__nav">
