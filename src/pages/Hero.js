@@ -1,6 +1,9 @@
 import { ReactComponent as HeroPortrait } from '../assets/portrait.svg';
+import { ReactComponent as SocialGithub } from '../assets/social/github.svg';
+
 
 const Hero = () => {
+  const socialLinks = ["https://github.com/7redeagle"]
   return (
     <div className="pure-g">
       <div className="hero__portrait pure-u-1 pure-u-md-1-2">
@@ -14,6 +17,11 @@ const Hero = () => {
           <a href="#projects">
             <button className="btn btn--pink-border">Projects</button>
           </a>
+        </div>
+        <div className="hero__links hero__links--social">
+          <a href={socialLinks[0]} target="_blank" rel="noreferrer">
+            <SocialGithub />
+          </a>            
         </div>
       </div>    
     </div>
