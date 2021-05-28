@@ -1,4 +1,5 @@
 import Hero from './pages/Hero';
+import Projects from './pages/Projects';
 
 const App = () => {
   return ( 
@@ -8,6 +9,8 @@ const App = () => {
     </section>
     <hr />
     <section className="projects" id="projects">
+      <h2 className="projects__title">Projects</h2>
+      <Projects />
     </section>
     <hr />
     <section className="skills" id="skills">

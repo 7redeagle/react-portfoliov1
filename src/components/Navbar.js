@@ -1,4 +1,3 @@
-import logo from '../assets/logo.png';
 import { ReactComponent as NavProjects } from '../assets/nav/projects.svg';
 import { ReactComponent as NavSkills } from '../assets/nav/skills.svg';
 import { ReactComponent as NavContact } from '../assets/nav/contact.svg';
@@ -12,7 +11,7 @@ const Navbar = () => {
   let options = {
     root: null,
     rootMargin: '0px',
-    threshold: .5 // default: .1 change this if the section takes up more than 100vh
+    threshold: .1 // default: .1 change this if the section takes up more than 100vh
   }
 
   // create observer
