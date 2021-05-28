@@ -3,24 +3,22 @@ import Hero from './pages/Hero';
 const App = () => {
   return ( 
   <main className="main">
-    <section className="hero">
+    <section className="hero" id="hero">
       <Hero />
     </section>
     <hr />
-    <section className="projects">
-      {/* <Projects /> */}
+    <section className="projects" id="projects">
     </section>
     <hr />
-    <section className="skills">
-      {/* <Skills /> */}
+    <section className="skills" id="skills">
     </section>
     <hr />
-    <section className="contacts">
-      {/* <Contact /> */}
+    <section className="contact" id="contact">
     </section>
     <hr />
-    {/* <Footer /> */}
-    </main> 
+</main>
+  
+  
   )
 }
 
