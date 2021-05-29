@@ -42,7 +42,7 @@ const Navbar = () => {
       <ul className="navbar__nav">
         <li className="navbar__item navbar__logo">
           <a className="navbar__link" href="#hero">
-            <img className="navbar__icon--logo" src="/logo.png" alt="Personal logo: white initials on red background. Click to return home" style={{width:"100%", height:"100%"}} />
+            <img className="navbar__icon--logo" src="/logo.png" alt="Personal Logo: white initials on red background.Click to return home." style={{width:"100%", height:"100%"}} />
           </a>   
         </li>
         <li className="navbar__item">
