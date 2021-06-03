@@ -2,11 +2,9 @@ import { ReactComponent as NavProjects } from '../assets/nav/projects.svg';
 import { ReactComponent as NavSkills } from '../assets/nav/skills.svg';
 import { ReactComponent as NavContact } from '../assets/nav/contact.svg';
 import { ReactComponent as NavGithub } from '../assets/nav/github.svg';
-
+import { GITHUB } from './constants';
 
 const Navbar = () => {
-  const linkGithub = "https://github.com/7redeagle";
-
   // set the observer options
   let options = {
     root: null,
@@ -64,7 +62,7 @@ const Navbar = () => {
           </a>   
         </li>
         <li className="navbar__item navbar__item--social">
-          <a className="navbar__link" href={ linkGithub } rel="noreferrer" target="_blank">
+          <a className="navbar__link" href={ GITHUB } rel="noreferrer" target="_blank">
             <NavGithub />
             <span className="navbar__text">Contact</span>
           </a>   

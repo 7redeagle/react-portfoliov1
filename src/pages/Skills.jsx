@@ -18,6 +18,7 @@ const Skills = () => {
   return (
     <div className="skills__grid">
       <div className="skills__icons pure-g">
+        
         {skillsIcons.map(icon => 
           <div className="pure-u-1-3">
             <img src={icon} alt={`${icon}`} />
