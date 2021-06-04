@@ -1,6 +1,8 @@
 import Hero from './pages/Hero';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills'
+import Contact from './pages/Contact'
+import Footer from './pages/Footer'
 
 const App = () => {
   return ( 
@@ -20,8 +22,10 @@ const App = () => {
     </section>
     <hr />
     <section className="contact" id="contact">
+      <h2 className="contact__title">Contact Me</h2>
+      <Contact />
     </section>
-    <hr />
+    <Footer />
 </main>
   
   

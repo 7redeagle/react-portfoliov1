@@ -1,3 +1,6 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Projects = () => {
   const projects = [  
     {
@@ -61,11 +64,12 @@ const Projects = () => {
       tags: ['jekyll', 'yaml']
     },
   ]
+  AOS.init();
 
   return (
     <div className="projects__grid">
       {projects.map(project => 
-        <div className="card" key={project.id}>
+        <div className="card" key={project.id} data-aos="fade-left" data-aos-delay="50" data-aos-easing="ease-in">
           <h3 className="card__title">{project.title}</h3>
           <div className="card__image">
             <img src={`./projects/${project.imgSrc}`} alt={project.alt} style={{width: "100%", height: "100%"}} />

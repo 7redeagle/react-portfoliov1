@@ -9,7 +9,7 @@ const Navbar = () => {
   let options = {
     root: null,
     rootMargin: '0px',
-    threshold: .3 // default: .1 change this if the section takes up more than 100vh
+    threshold: .1 // default: .1 change this if the section takes up more than 100vh
   }
 
   // create observer
