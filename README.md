@@ -2,7 +2,7 @@
 
 The third version of my <a href="https://portfolio.ainchn.com/" target="_blank">portfolio</a> built with react and sass. Hosted with Cloudflare Pages. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![demo](https://github.com/7redeagle/portfolio-v2/blob/testing/src/assets/projects/portfolio-desktop.png?raw=true)
+![demo](https://github.com/7redeagle/react-portfoliov1/blob/main/public/projects/portfolio-desktop.png)
 
 ## Cloning this repo 
 
