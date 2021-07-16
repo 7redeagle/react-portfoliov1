@@ -1,12 +1,12 @@
 # My Portfolio 
 
-The react version of my <a href="https://portfolio.ainchn.com/" target="_blank">portfolio</a> built with react and sass. Hosted with Cloudflare Pages. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The react version of my <a href="https://portfoliov1.ainchn.com" target="_blank">portfolio</a> built with react and sass. Hosted with Cloudflare Pages. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ![demo](https://github.com/7redeagle/react-portfoliov1/blob/main/public/projects/portfolio-desktop.png)
 
 ## Cloning this repo 
 
-Please give me proper credit by linking back to <a href="https://portfolio.ainchn.com/" target="_blank">my portfolio</a> Thanks!
+Please give me proper credit by linking back to <a href="https://portfoliov1.ainchn.com" target="_blank">my portfolio</a> Thanks!
 
 ### Requirements 
 * Node v14.0.0 (Current)
