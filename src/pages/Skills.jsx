@@ -13,7 +13,7 @@ import vue from '../assets/skills/vue.svg'
 
 const Skills = () => {
   const skillsIcons = [
-    html5, css3, javascript, bootstrap, sass, git, nodejs, react, redux, figma, aws, vue
+    html5, css3, javascript, bootstrap, sass, git, nodejs, react, figma,
   ]
   return (
     <div className="skills__grid">
